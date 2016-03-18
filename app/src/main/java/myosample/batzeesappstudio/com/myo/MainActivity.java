@@ -66,29 +66,27 @@ public class MainActivity extends Activity {
 
             @Override
             public void onPose(Myo myo, long timestamp, Pose pose) {
-                //Toast.makeText(context, "Pose: " + pose, Toast.LENGTH_SHORT).show();
-
                 switch (pose) {
                     case REST:
-                        //monthString = "January";
+                        Toast.makeText(context, "REST", Toast.LENGTH_SHORT).show();
                         break;
                     case FIST:
-                        //monthString = "February";
+                        Toast.makeText(context, "FIST", Toast.LENGTH_SHORT).show();
                         break;
                     case WAVE_IN:
-                        //monthString = "March";
+                        Toast.makeText(context, "WAVE_IN", Toast.LENGTH_SHORT).show();
                         break;
                     case WAVE_OUT:
-                        //monthString = "April";
+                        Toast.makeText(context, "WAVE_OUT", Toast.LENGTH_SHORT).show();
                         break;
                     case FINGERS_SPREAD:
-                        //monthString = "May";
+                        Toast.makeText(context, "FINGERS_SPREAD", Toast.LENGTH_SHORT).show();
                         break;
                     case DOUBLE_TAP:
-                        //monthString = "June";
+                        Toast.makeText(context, "DOUBLE_TAP", Toast.LENGTH_SHORT).show();
                         break;
                     case UNKNOWN:
-                        //monthString = "July";
+                        Toast.makeText(context, "UNKNOWN", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }
